@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<div class="grid">
+		<div class="grid-row">
+			<div class="grid-cell" id="0" onclick="xo(0)"></div>	
+			<div class="grid-cell" id="1" onclick="xo(1)"></div>
+			<div class="grid-cell" id="2" onclick="xo(2)"></div>
+		</div>
+		<div class="grid-row">
+			<div class="grid-cell" id="3" onclick="xo(3)"></div>	
+			<div class="grid-cell" id="4" onclick="xo(4)"></div>
+			<div class="grid-cell" id="5" onclick="xo(5)"></div>
+		</div>
+		<div class="grid-row">
+			<div class="grid-cell" id="6" onclick="xo(6)"></div>	
+			<div class="grid-cell" id="7" onclick="xo(7)"></div>
+			<div class="grid-cell" id="8" onclick="xo(8)"></div>
+		</div>
+	</div>
+	<div class="winner-holder" >
+		<div class="winner" id="win">
+			<p>The winner is <span id="victory"></span> would you like to restart the game?</p>
+		</div>
+		<div class="tie" id="draw">
+			<p>No winners!</p>
+		</div>
+		<div id="hide">
+		<button onclick="restartBtn()" id="btn" value="reset">Restart</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="tictactoe.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="styling.js"></script>
+</body>
+</html>
